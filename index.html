@@ -1,16 +1,20 @@
 <!DOCTYPE html>
   <html lang = "en">
     <head>
+      <title>Tech Magazine</title>
       <meta charset = "utf-8" />
       <meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1, shrink-to-fit = no" />
       <meta name = "keywords" content = "tech, programming, magazine, blog, tech magazine, geek" />
       <script type = "text/javascript" src = "main.js"></script>
+      <link rel = "stylesheet" href = "themes/default.css" />
     </head>
     <body>
       <article id = "Magazine Blog">
-        <header>Tech Magazine number <input id = "post-counter" width = "2%" type = "number" min = "1" max = "1000" value = "1000" onchange = "showPost(parseInt(document.querySelector("#post-counter").value))"/></header>
+        <header>Tech Magazine number <input id = "post-counter" type = "number" min = "1" max = "1000" value = "1" onchange = "showPost(parseInt(document.querySelector("#post-counter").value))"/></header>
+        <hr />
         <section id = "post-view">
         </section>
+        <hr />
         <footer>© 2024 founded by <a href = "https://github.com/NicoPauer/" target = "_blank">NicoPauer</a> and post written for many others programmers and tech bloggers</footer>
       </article>  
     </body>
