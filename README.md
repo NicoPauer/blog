@@ -9,8 +9,14 @@ A magazine blog about programming a tech which author can pay me to send a JSON 
     "author" : "Author Name",
    // When finish of write the post
     "date" : "dd/mm/yyyy HH:MM (Writing finishing Date)",
-   // Mails of the authors and publishers
+   // Mails list of the authors and publishers
     "contacts" : ["nicolaspauer20@gmail.com"],
+   // List of the texts of your post
+    "contents" : [],
+   // Categories of your post
+    "tags" : [],
+   // CSS template available in folder themes
+    "template" : "default.css"
   }
 ```
 ## Payment Methods
