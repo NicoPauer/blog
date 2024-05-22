@@ -8,7 +8,7 @@ A magazine blog about programming a tech which author can pay me to send a JSON 
    // Your name
     "author" : "Author Name",
    // When finish of write the post
-    "date" : "dd/mm/yyyy HH:MM (Writing finishing Date)",
+    "date" : "dd/mm/yyyy (Writing finishing Date in Gregorian Calendar)",
    // Mails list of the authors and publishers
     "contacts" : ["nicolaspauer20@gmail.com"],
    // List of the texts of your post
