@@ -1,0 +1,7 @@
+# Hide for security this files from the users only the contributors of this repository must be get access to this sensitive files
+# Mark Down
+*.md
+# POSTS JSON
+posts/*.json
+# Javascript
+main.js
