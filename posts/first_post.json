@@ -1,6 +1,14 @@
 {
     "name" : "About Bitcoin Pizza Day",
     "author" : "NicoPauer",
-    "date" : "22/05/2024 : ",
+    "date" : "22/05/2024",
     "contacts" : ["nicolaspauer20@gmail.com"],
+    "contents" : [
+                      "The 22nd of may 2010 a person bought two pizzas using Bitcoin.", 
+                      "The story start of this way: A programmer from Jacksonville at the Florida State named Laszlo Hanyecz write in the forum Bitcoin Talk the request of two pizzas paying all the spending with 10000 BTC.",
+                      "At that moment 1 Bitcoin was equal to 0.0004 USD then 10000 Bitcoins were 40 USD.",
+                      "A britanic gentlemen named Jercos take the offer, call to the pizza delivery to send the pizzas to Laszlo beeing that the first goods exchange using Bitcoin proving his utility like real money."
+                 ],
+    "tags" : ["Crypto", "Tech Days", "Funny Facts"],
+    "template" : "default.css"
 }
