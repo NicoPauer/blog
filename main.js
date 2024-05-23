@@ -17,7 +17,7 @@ function showPost(index)
    
    for (let text in data["content"])
    {
-      content += ("<p>" + text + "</p>");
+      content += ("<p>" + data["content"][text] + "</p>");
    }
   
    content += "</section><br />";
@@ -26,7 +26,7 @@ function showPost(index)
 
    for (let item in data["tags"])
    {
-      tags += ('<li>' + item + '</li>');
+      tags += ('<li>' + data["tags"][item] + '</li>');
    }
 
    tags += "</ul><br />";
@@ -35,7 +35,7 @@ function showPost(index)
 
    for (let contact in data["contacts"])
    {
-      contacts += ('<li><a href = "mailto:' + contact + '"</a>' + contact + '</li>');
+      contacts += ('<li><a href = "mailto:' + data["contacts"][contact] + '"</a>' + data["contacts"][contact] + '</li>');
    }
    
    contacts += "</ol><br />";
