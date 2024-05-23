@@ -15,7 +15,7 @@ function showPosts(index)
    
    let content = ('<br /><style src = "' + data["template" ] + '" type = "text/css"></style><section id = "post-' + index + '">');
    
-   for (text in data["content"])
+   for (let text in data["content"])
    {
       content += ("<p>" + text + "</p>");
    }
@@ -24,7 +24,7 @@ function showPosts(index)
    // List of tags
    let tags = '<h2>Categories:</h2><br /><ul id = "tags">';
 
-   for (item in data["tags"])
+   for (let item in data["tags"])
    {
       tags += ('<li>' + item + '</li>');
    }
@@ -33,7 +33,7 @@ function showPosts(index)
    // List of E-mail contacts
    let contacts = '<h3>Contacts:</h3><br /><ol id = "contacts">';
 
-   for (contact in data["contacts"])
+   for (let contact in data["contacts"])
    {
       contacts += ('<li><a href = "mailto:' + contact + '"</a>' + contact + '</li>');
    }
