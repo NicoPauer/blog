@@ -19,11 +19,6 @@ ol, ul
   border: 0.2em rgba(122, 122, 122, 0.75);
 }
 
-li
-{
-  display: none;
-}
-
 li:hover
 {
   transition: linear 0.5s;
