@@ -1,5 +1,5 @@
 // Load from the folder posts all the JSON data to render posts
-function showPosts(index)
+function showPost(index)
 {
    // Load posts from JSON files
     let data =   {
