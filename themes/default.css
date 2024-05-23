@@ -14,18 +14,6 @@ hr
   padding: 0;
 }
 
-ol, ul
-{
-  border: 0.2em rgba(122, 122, 122, 0.75);
-}
-
-li:hover
-{
-  transition: linear 0.5s;
-  border: 0.2em rgba(122, 122, 122, 0.75);
-  display: block;
-}
-
 article
 {
     padding: 0.4em;
