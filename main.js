@@ -3,14 +3,31 @@ function showPost(index)
 {
    // Load posts from JSON files
     let data =   {
-                   "name" : "Research get data from a JSON file",
+                   "name" : "",
                    "author" : "",
-                   "date" : "22/05/2024",
-                   "content" : ["text_1", "text_2"],
+                   "date" : "",
+                   "content" : [],
                    "contacts" : [],
-                   "tags" : [1, 2, 3],
-                   "template" : "default.css"
+                   "tags" : [],
+                   "template" : ""
                  };
+   // Uso a fetch API Promise for load the JSON
+   fetch("https://nicopauer.github.io/blog/posts.json")
+   .then(response => response.json())
+   .then(url => {
+      // Turn into url the index using JSON
+      fetch(url[index])
+      .then(getURL => getURL.json())   
+      .then(post => {
+         data.name = post.name;
+         data.author = post.author;
+         data.date = post.date;
+         data.content = post.content;
+         data.contacts = post.contacts;
+         data.tags = post.tags;
+         data.template = post.template;
+      }).catch(error => alert(error));
+   }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
    // Summarize the content of the post
    
    let content = ('<br /><style src = "' + data["template" ] + '" type = "text/css"></style><section id = "post-' + index + '">');
