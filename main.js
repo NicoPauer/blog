@@ -37,12 +37,9 @@ function showPosts(index)
    {
       contacts += ('<li><a href = "mailto:' + contact + '"</a>' + contact + '</li>');
    }
-
+   
    contacts += "</ul><br />";
   // Render the post in HTML
-   if (index in data)
-   {   
-       let view = document.querySelector("#post-view");
-       view.innerHTML += ("<h1><u>" + data["name"] + "</u></h1><sup>" + data["author"] + "</sup><sub>" + data["date"] + "</sub>" + content + tags + contact);
-   }   
+   let view = document.querySelector("#post-view");
+   view.innerHTML = ("<h1><u>" + data["name"] + "</u></h1><sup>" + data["author"] + "</sup><sub>" + data["date"] + "</sub>" + content + tags + contact);
 }
