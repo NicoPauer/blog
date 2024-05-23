@@ -20,7 +20,7 @@ function showPosts(index)
       content += ("<p>" + text + "</p>");
    }
   
-   content += "</section><br />"
+   content += "</section><br />";
    // List of tags
    let tags = '<h2>Categories:</h2><br /><ul id = "tags">';
 
@@ -43,6 +43,6 @@ function showPosts(index)
    if (index in data)
    {   
        let view = document.querySelector("#post-view");
-       view.innerHTML += ("<h1><u>" + data["name"] + "</u></h1><sup> " + data["author"] + " </sup><sub>" + data["date"] + "</sub>" + content + tags + contact);
+       view.innerHTML += ("<h1><u>" + data["name"] + "</u></h1><sup>" + data["author"] + "</sup><sub>" + data["date"] + "</sub>" + content + tags + contact);
    }   
 }
