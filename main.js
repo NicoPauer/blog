@@ -20,7 +20,7 @@ function showPosts(index)
       content += ("<p>" + text + "</p>");
    }
   
-   contetnt += "</section><br />"
+   content += "</section><br />"
    // List of tags
    let tags = '<h2>Categories:</h2><br /><ul id = "tags">';
 
