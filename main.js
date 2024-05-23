@@ -13,7 +13,7 @@ function showPosts(index)
                  };
    // Summarize the content of the post
    
-   let content = ('<br /><style src = "' + data["template" ]+ '" type = "text/css"></style><section id = "post-" ' + index + '>');
+   let content = ('<br /><style src = "' + data["template" ] + '" type = "text/css"></style><section id = "post-' + index + '">');
    
    for (text in data["content"])
    {
@@ -24,7 +24,7 @@ function showPosts(index)
    // List of tags
    let tags = '<h2>Categories:</h2><br /><ul id = "tags">';
 
-   for (item in data[tags])
+   for (item in data["tags"])
    {
       tags += ('<li>' + item + '</li>');
    }
