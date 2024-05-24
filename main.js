@@ -8,9 +8,10 @@ function showPost(index)
    .then(response => response.json())
    .then(url => {
       // Turn into url the index using JSON
-      fetch(url["1"])
+      fetch(url[index])
       .then(getURL => getURL.json())   
       .then(post => {
+         console.log(post);
          data.name = post.name;
          data.author = post.author;
          data.date = post.date;
@@ -50,6 +51,5 @@ function showPost(index)
    contacts += "</ol><br />";
   // Render the post in HTML
    let view = document.querySelector("#post-view");
-   console.log(data["name"]);
    view.innerHTML = ("<h1><u>" + data["name"] + "</u></h1><sup>" + data["author"] + "</sup><sub>" + data["date"] + "</sub>" + content + tags + contacts);
 }
