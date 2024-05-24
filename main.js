@@ -5,7 +5,9 @@ function loadJSON(url)
    fetch(url)
    .then(response => response.json())
    .then(result => {
-      return {result.name, result.author};
+      data.name = result.name;
+      data.author = result.author;
+      return data;
    });
 }
 // Load from the folder posts all the JSON data to render posts
