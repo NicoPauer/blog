@@ -16,7 +16,7 @@ function showPost(index)
    .then(response => response.json())
    .then(url => {
       // Turn into url the index using JSON
-      fetch(url[index])
+      fetch(url[1])
       .then(getURL => getURL.json())   
       .then(post => {
          data.name = post.name;
