@@ -5,9 +5,14 @@ function loadJSON(url)
    fetch(url)
    .then(response => response.json())
    .then(result => {
+      // Copy data from url
       data.name = result.name;
       data.author = result.author;
-      return data;
+      data.date = result.date;
+      data.contents = result.contents;
+      data.contacts = result.contacts;
+      data.tags = result.tags;
+      data.template = result.template;
    });
 }
 // Load from the folder posts all the JSON data to render posts
@@ -18,7 +23,7 @@ function showPost(index)
      fetch("https://nicopauer.github.io/blog/posts.json")
         .then(response => response.json())
         .then(url => {
-           data = loadJSON(url[index]);
+           loadJSON(url[index]);
         })
         .catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
 
