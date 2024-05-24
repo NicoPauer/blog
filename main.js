@@ -11,6 +11,7 @@ function showPost(index)
       fetch(url[index])
       .then(getURL => getURL.json())   
       .then(post => {
+         console.log(post.date);
          data.name = post.name;
          data.author = post.author;
          data.date = post.date;
