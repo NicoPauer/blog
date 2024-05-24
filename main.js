@@ -1,5 +1,13 @@
 // Format JSON externally for better copy process for don't be null
 var data = {"name" : "", "date" : "", "author" : "", "contents" : [], "contacts" : [], "tags" : [], "template" : ""};
+function loadJSON(url)
+{
+   fetch(url)
+   .then(response => response.json())
+   .then(result => {
+      return result;
+   });
+}
 // Load from the folder posts all the JSON data to render posts
 function showPost(index)
 {
@@ -8,7 +16,7 @@ function showPost(index)
      fetch("https://nicopauer.github.io/blog/posts.json")
         .then(response => response.json())
         .then(url => {
-           console.log("URL: " + url[index]);
+           data = loadJSON(url[index]);
         })
         .catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
 
