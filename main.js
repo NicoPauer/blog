@@ -12,8 +12,8 @@ function showPost(index)
       fetch(url[index])   
       .then(post => {
         // Copy data from JSON 
-       cosole.log(post);  
-       data = post;  
+       cosole.log(url[index]);  
+       data = post.json();  
       }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
    }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
 
