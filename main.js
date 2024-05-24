@@ -1,8 +1,9 @@
+// Format JSON externally for better copy process for don't be null
+let data = {"name" : "", "date" : "", "author" : "", "contents" : [], "contacts" : [], "tags" : [], "template" : ""};
 // Load from the folder posts all the JSON data to render posts
 function showPost(index)
 {
    // Load posts from JSON files
-    let data = {"name" : "", "date" : "", "author" : "", "contents" : [], "contacts" : [], "tags" : [], "template" : ""};
   // Load JSON  
      fetch("https://nicopauer.github.io/blog/posts.json")
    .then(response => response.json())
