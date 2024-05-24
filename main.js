@@ -1,5 +1,6 @@
 // Format JSON externally for better copy process for don't be null
 var data = {"name" : "", "date" : "", "author" : "", "contents" : [], "contacts" : [], "tags" : [], "template" : ""};
+
 function loadJSON(url)
 {
    fetch(url)
@@ -23,8 +24,7 @@ function showPost(index)
      fetch("https://nicopauer.github.io/blog/posts.json")
         .then(response => response.json())
         .then(url => {
-           loadJSON(url[index]);
-           loadJSON(url[index]);
+           setInterval(5000, () => loadJSON(url[index]));
         })
         .catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
 
@@ -58,5 +58,5 @@ function showPost(index)
    contacts += "</ol><br />";
   // Render the post in HTML
    let view = document.querySelector("#post-view");
-   view.innerHTML = ("<h1><u>" + data["name"] + "</u></h1><sup>" + data["author"] + "</sup><sub>" + data["date"] + "</sub>" + content + tags + contacts);
+   view.innerHTML = ("<h1><u>" + data["name"] + "</u></h1><sup>" + data["author"] + "</sup><br /><sub><h2>" + data["date"] + "</h2></sub>" + content + tags + contacts);
 }
