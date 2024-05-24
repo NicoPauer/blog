@@ -1,0 +1,9 @@
+  {
+    "name" : "Write Your First Article",
+    "author" : "NicoPauer",
+    "date" : "//2024",
+    "contacts" : ["nicolaspauer20@gmail.com"],
+    "contents" : [],
+    "tags" : ["Writing", "Tech Magazine", "Marketing"],
+    "template" : "default.css"
+  }
