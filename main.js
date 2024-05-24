@@ -6,16 +6,11 @@ function showPost(index)
    // Load posts from JSON files
   // Load JSON  
      fetch("https://nicopauer.github.io/blog/posts.json")
-   .then(response => response.json())
-   .then(url => {
-      // Turn into url the index using JSON
-      fetch(url[index])   
-      .then(post => {
-        // Copy data from JSON 
-       cosole.log(url[index]);  
-       data = post.json();  
-      }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
-   }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
+        .then(response => response.json())
+        .then(url => {
+           console.log("URL: " + url[index]);
+        })
+        .catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
 
    // Summarize the content of the post
    
