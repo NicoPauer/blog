@@ -13,7 +13,7 @@ function showPost(index)
       .then(getURL => getURL.json())   
       .then(post => {
         // Copy data from JSON 
-       cosole.log(data);  
+       cosole.log(post);  
        data = post;  
       }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
    }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
