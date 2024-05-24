@@ -11,7 +11,6 @@ function showPost(index)
       fetch(url[index])
       .then(getURL => getURL.json())   
       .then(post => {
-         console.log(post);
          data.name = post.name;
          data.author = post.author;
          data.date = post.date;
@@ -21,6 +20,7 @@ function showPost(index)
          data.template = post.template;
       }).catch(error => alert(error));
    }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
+   console.log(data);
    // Summarize the content of the post
    
    let content = ('<br /><style src = "' + data["template" ] + '" type = "text/css"></style><section id = "post-' + index + '">');
