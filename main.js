@@ -7,8 +7,8 @@ function loadJSON(index)
       fetch(url[index])
       .then(getURL => getURL.json())   
       .then(post => {
-         // Declare local variable prevent errors
-         let data;
+         // Declare local variable prevent errors and init too
+         let data = {"name" : "", "date" : "", "author" : "", "contents" : [], "contacts" : [], "tags" : [], "template" : ""};
         // Copy data from JSON 
          data.name = post.name;
          data.author = post.author;
