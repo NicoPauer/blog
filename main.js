@@ -1,33 +1,20 @@
-function loadJSON(index)
+// Load from the folder posts all the JSON data to render posts
+function showPost(index)
 {
-    fetch("https://nicopauer.github.io/blog/posts.json")
+   // Load posts from JSON files
+    let data = {"name" : "", "date" : "", "author" : "", "contents" : [], "contacts" : [], "tags" : [], "template" : ""};
+  // Load JSON  
+     fetch("https://nicopauer.github.io/blog/posts.json")
    .then(response => response.json())
    .then(url => {
       // Turn into url the index using JSON
       fetch(url[index])
       .then(getURL => getURL.json())   
       .then(post => {
-         // Declare local variable prevent errors and init too
-         let data = {"name" : "", "date" : "", "author" : "", "contents" : [], "contacts" : [], "tags" : [], "template" : ""};
         // Copy data from JSON 
-         data.name = post.name;
-         data.author = post.author;
-         data.date = post.date;
-         data.contents = post.contents;
-         data.contacts = post.contacts;
-         data.tags = post.tags;
-         data.template = post.template;
-        // This fetch is insolate from the rest of the function 
-         console.log(data); 
-         return data;
+       data = post.json();
       }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
    }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
-}
-// Load from the folder posts all the JSON data to render posts
-function showPost(index)
-{
-   // Load posts from JSON files
-    let data = loadJSON(index);
     console.log(data);
    // Summarize the content of the post
    
