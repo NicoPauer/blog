@@ -24,6 +24,7 @@ function showPost(index)
         .then(response => response.json())
         .then(url => {
            loadJSON(url[index]);
+           loadJSON(url[index]);
         })
         .catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
 
