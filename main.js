@@ -9,8 +9,7 @@ function showPost(index)
    .then(response => response.json())
    .then(url => {
       // Turn into url the index using JSON
-      fetch(url[index])
-      .then(getURL => getURL.json())   
+      fetch(url[index])   
       .then(post => {
         // Copy data from JSON 
        cosole.log(post);  
