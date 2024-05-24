@@ -5,7 +5,7 @@ function loadJSON(url)
    fetch(url)
    .then(response => response.json())
    .then(result => {
-      return result;
+      alert(result);
    });
 }
 // Load from the folder posts all the JSON data to render posts
