@@ -18,6 +18,7 @@ function loadJSON(index)
          data.tags = post.tags;
          data.template = post.template;
         // This fetch is insolate from the rest of the function 
+         console.log(data); 
          return data;
       }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
    }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
