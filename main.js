@@ -13,10 +13,11 @@ function showPost(index)
       .then(getURL => getURL.json())   
       .then(post => {
         // Copy data from JSON 
+       console.log(post.json());  
        data = post.json();
       }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
    }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
-    console.log(data);
+
    // Summarize the content of the post
    
    let content = ('<br /><style src = "' + data["template" ] + '" type = "text/css"></style><section id = "post-' + index + '">');
