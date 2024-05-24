@@ -24,7 +24,7 @@ function showPost(index)
      fetch("https://nicopauer.github.io/blog/posts.json")
         .then(response => response.json())
         .then(url => {
-           setInterval(5000, () => loadJSON(url[index]));
+           loadJSON(url[index]);
         })
         .catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
 
