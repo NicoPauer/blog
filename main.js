@@ -14,7 +14,7 @@ function showPost(index)
       .then(post => {
         // Copy data from JSON 
        console.log(post.json());  
-       data = post.json();
+       data["name"] = "something";
       }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
    }).catch(error => alert("404 POST NOT FOUND: IT DOESN'T EXIST YET"));
 
