@@ -6,7 +6,7 @@ function showPost(index)
                    "name" : "",
                    "author" : "",
                    "date" : "",
-                   "content" : [],
+                   "contents" : [],
                    "contacts" : [],
                    "tags" : [],
                    "template" : ""
@@ -22,7 +22,7 @@ function showPost(index)
          data.name = post.name;
          data.author = post.author;
          data.date = post.date;
-         data.content = post.content;
+         data.contents = post.contents;
          data.contacts = post.contacts;
          data.tags = post.tags;
          data.template = post.template;
@@ -32,9 +32,9 @@ function showPost(index)
    
    let content = ('<br /><style src = "' + data["template" ] + '" type = "text/css"></style><section id = "post-' + index + '">');
    
-   for (let text in data["content"])
+   for (let text in data["contents"])
    {
-      content += ("<p>" + data["content"][text] + "</p>");
+      content += ("<p>" + data["contents"][text] + "</p>");
    }
   
    content += "</section><br />";
