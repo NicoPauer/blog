@@ -2,7 +2,7 @@
 function showPost(index)
 {
    // Load posts from JSON files
-    let data;
+    var data;
    // Uso a fetch API Promise for load the JSON
    fetch("https://nicopauer.github.io/blog/posts.json")
    .then(response => response.json())
