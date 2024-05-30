@@ -8,5 +8,5 @@
                    "<mark>https://translate.google.com/?sl=</mark><mark class = 'variation'>A</mark><mark>&tl=</mark><mark class = 'variation'>B</mark><mark>&top=translate</mark>"
                  ],
     "tags" : ["Tricks", "Google"],
-    "template" : "default.css"
+    "template" : "gemini-theme.css"
   }
