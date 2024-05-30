@@ -58,5 +58,5 @@ function showPost(index)
    contacts += "</ol><br />";
   // Render the post in HTML
    let view = document.querySelector("#post-view");
-   view.innerHTML = ("<h1><u>" + data["name"] + "</u></h1><sup>" + data["author"] + "</sup><br /><sub><h2>" + data["date"] + "</h2></sub>" + content + tags + contacts);
+   view.innerHTML = ("<h1><u>" + data["name"] + "</u></h1><sup><mark>" + data["author"] + "</sup><br /><sub><h2>" + data["date"] + "</h2></sub></mark>" + content + tags + contacts);
 }
