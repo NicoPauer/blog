@@ -1,13 +1,8 @@
 /* Other Gemini CSS theme */
 
 * {
-  /* Clean look with optional theme toggle */
-  background-color: #f0f0f0; /* Light background by default */
-}
-
-.dark-theme {
-  background-color: #303030; /* Optional dark theme */
-  color: #f0f0f0;
+   background-color: #303030; /* dark theme */
+   color: #f0f0f0;
 }
 
 .clean-look {
