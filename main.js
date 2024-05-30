@@ -39,7 +39,7 @@ function showPost(index)
   
    content += "</section><br />";
    // List of tags
-   let tags = '<h2>Categories:</h2><br /><ul id = "tags">';
+   let tags = '<h2><sup>Categories</sup>:</h2><br /><ul id = "tags">';
 
    for (let item in data["tags"])
    {
@@ -48,7 +48,7 @@ function showPost(index)
 
    tags += "</ul><br />";
    // List of E-mail contacts
-   let contacts = '<h3>Contacts:</h3><br /><ul id = "contacts">';
+   let contacts = '<h3><sup>Contacts</sup>:</h3><br /><ul id = "contacts">';
 
    for (let contact in data["contacts"])
    {
