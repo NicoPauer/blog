@@ -14,6 +14,22 @@ body
   color: rgb(240, 250, 250);
 }
 
+mark
+{
+  font-family: 'serif';
+ /* Invert body style */
+  background: rgb(240, 250, 250);
+  color: rgb(100, 100, 100, 0.7);
+}
+
+.variation
+{
+  font-family: 'sans-serif';
+ /* Boost mark style */
+  background: rgb(140, 150, 150);
+  color: rgb(200, 200, 200, 0.9);
+}
+
 hr
 {
   margin: 0;
