@@ -30,7 +30,7 @@ function showPost(index)
 
    // Summarize the content of the post
    
-   let content = ('<br /><style src = "https://nicopauer.github.io/blog/themes/' + data["template" ] + '" type = "text/css"></style><section id = "post-' + index + '">');
+   let content = ('<br /><link href = "https://nicopauer.github.io/blog/themes/' + data["template" ] + '" /><section id = "post-' + index + '">');
    
    for (let text in data["contents"])
    {
