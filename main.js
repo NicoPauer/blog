@@ -48,14 +48,14 @@ function showPost(index)
 
    tags += "</ul><br />";
    // List of E-mail contacts
-   let contacts = '<h3>Contacts:</h3><br /><ol id = "contacts">';
+   let contacts = '<h3>Contacts:</h3><br /><ul id = "contacts">';
 
    for (let contact in data["contacts"])
    {
       contacts += ('<li><a href = "mailto:' + data["contacts"][contact] + '"</a>' + data["contacts"][contact] + '</li>');
    }
    
-   contacts += "</ol><br />";
+   contacts += "</ul><br />";
   // Render the post in HTML
    let view = document.querySelector("#post-view");
    view.innerHTML = ("<h1><u>" + data["name"] + "</u></h1><sup><mark>" + data["author"] + "</sup><br /><sub><h2>" + data["date"] + "</h2></sub></mark>" + content + tags + contacts);
