@@ -1,9 +1,12 @@
  {
-    "name" : "",
-    "author" : "",
-    "date" : "//",
+    "name" : "Google Translator Trick",
+    "author" : "NicoPauer",
+    "date" : "30/05/2024",
     "contacts" : ["nicolaspauer20@gmail.com"],
-    "contents" : [],
-    "tags" : [],
+    "contents" : [
+                   "Typing the next URL format in your browser you get a direct translation between a language with lang code A to other with lang code B",
+                   "<mark>https://translate.google.com/?sl=</mark>A<mark>&tl=</mark>B<mark>&top=translate</mark>"
+                 ],
+    "tags" : ["Tricks", "Google"],
     "template" : "default.css"
   }
