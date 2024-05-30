@@ -4,4 +4,125 @@
 
     "Change the values of this properties and add news properties when would be need
     on the CSS file with the 2024 trends."
+     "Now for be completely different for user look"
 */
+:root {
+  --primary-color: #ffebcd; /* Light peach background */
+  --secondary-color: #4285f4; /* Dark blue accent */
+  --text-color: #222; /* Dark text */
+}
+
+/* Spacious and Asymmetrical Layout */
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin: 2em auto; /* Centered with some margin */
+  max-width: 800px; /* Limit container width */
+  font-family: 'Open Sans', sans-serif; /* Modern sans-serif font */
+}
+
+* {
+  box-sizing: border-box; /* Ensures consistent box model */
+  padding: 0;
+  margin: 0;
+}
+
+/* Headers with Asymmetry */
+header, footer {
+  display: flex;
+  justify-content: space-between; /* Elements spread out */
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+header h1,
+footer h2 {
+  font-family: 'Lobster', cursive; /* Decorative font for headers */
+  margin: 0;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1em;
+  display: flex; /* Horizontal navigation */
+}
+
+nav a {
+  color: inherit; /* Inherit color from nav */
+  text-decoration: none;
+  padding: 0.5em 1em; /* Spacing between links */
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Slight darkening on hover */
+}
+
+/* Content with Asymmetry and Emphasis */
+section {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 0.5em;
+  display: flex; /* Content sections use flexbox */
+  flex-direction: column; /* Stacked vertically */
+}
+
+article {
+  flex: 1; /* Takes up remaining space in section */
+  padding: 1em;
+  border-radius: 0.5em; /* Rounded corners for articles */
+  background-color: white; /* White for better contrast */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  line-height: 1.5; /* Improves readability */
+}
+
+/* Emphasized Links */
+a {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Form Styles (can be further customized) */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+}
+
+input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.7em 1em;
+  border: none;
+  cursor: pointer; /* Indicates clickable button */
+}
+
+/* Omit unnecessary selectors like `hr` and `.variation` for a cleaner stylesheet */
