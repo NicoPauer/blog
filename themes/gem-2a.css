@@ -1,0 +1,94 @@
+/* Other Gemini CSS theme */
+
+* {
+  /* Clean look with optional theme toggle */
+  background-color: #f0f0f0; /* Light background by default */
+}
+
+.dark-theme {
+  background-color: #303030; /* Optional dark theme */
+  color: #f0f0f0;
+}
+
+.clean-look {
+  text-align: center;
+  font-family: Arial, sans-serif; /* Include Arial for fallback */
+  margin: 0;
+  padding: 0.8em;
+  border-radius: 0.4em;
+}
+
+/* iNMERSIVE STYLE with focus on clarity */
+body,
+mark,
+.variation {
+  font-weight: bold; /* Emphasis without complex styles */
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.5em; /* Clear heading hierarchy */
+  margin-bottom: 1em; /* Spacing for readability */
+  color: contrast(var(--background-color)); /* Dynamic contrast for headings */
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #ddd; /* Subtle line for separation */
+}
+
+/* Focus on content with clear navigation */
+nav {
+  background: #808080;
+  font-weight: 840;
+  padding: 1em;
+}
+
+nav ul { /* Assuming list-based navigation */
+  list-style: none; /* Remove bullets for cleaner look */
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block; /* Align navigation items horizontally */
+  margin-right: 1em; /* Spacing for readability */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Light text color for navigation */
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3); /* Subtle hover effect */
+}
+
+/* Accessible links */
+a {
+  text-decoration: none;
+  padding: 0.2em; /* Reduced padding for better hit area */
+  font-family: Arial, sans-serif; /* Include Arial for fallback */
+}
+
+a:focus {
+  outline: 2px solid dodgerblue; /* Clear focus indicator */
+}
+
+a:hover {
+  transition: linear 0.5s;
+  color: #007bff; /* Blue hover color */
+}
+
+/* Consistent form styles */
+input[type=number] {
+  width: 4em;
+  padding: 0.5em;
+  border: 1px solid #ccc; /* Basic border for clarity */
+}
+
+/* Optional - Remove animations/autoplay */
+
+/* Optional - Add closed captions for videos */
