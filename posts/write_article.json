@@ -3,7 +3,7 @@
     "author" : "NicoPauer",
     "date" : "30/05/2024",
     "contacts" : ["nicolaspauer20@gmail.com"],
-    "contents" : ["Hey, are you looking for publish article in JSON format and support this blog.", "send me an e-mail and read <a href = 'https://github.com/NicoPauer/blog/README.md'>Explaning</a> to get this valueble information.", "Not have fear this is an a hipster alternative."],
+    "contents" : ["Hey, are you looking for publish article in JSON format and support this blog.", "send me an e-mail and read <a href = 'https://github.com/NicoPauer/blog/blob/main/README.md'>Explaning</a> to get this valueble information.", "Not have fear this is an a hipster alternative."],
     "tags" : ["Writing", "Tech Magazine", "Marketing"],
     "template" : "default.css"
   }
